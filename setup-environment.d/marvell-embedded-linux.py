@@ -6,6 +6,7 @@ def __after_init_embedded_linux_yocto():
                      'meta-openembedded/meta-python',
                      'meta-openembedded/meta-oe',
                      'meta-openembedded/meta-networking',
+                     'meta-openembedded/meta-filesystems',
                      'meta-marvell-distro',
                      'meta-marvell'
                     ]])
