@@ -1,3 +1,6 @@
+def __set_defaults_embedded_linux_yocto():
+    set_default('DISTRO', 'marvell')
+
 def __after_init_embedded_linux_yocto():
     PLATFORM_ROOT_DIR = os.environ['PLATFORM_ROOT_DIR']
 
@@ -12,5 +15,5 @@ def __after_init_embedded_linux_yocto():
                     ]])
 
 
-
+run_set_defaults(__set_defaults_embedded_linux_yocto)
 run_after_init(__after_init_embedded_linux_yocto)
