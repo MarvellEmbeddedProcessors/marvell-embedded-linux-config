@@ -49,7 +49,8 @@ def __after_init_marvell_embedded_linux_yocto():
                      'meta-openembedded/meta-networking',
                      'meta-openembedded/meta-filesystems',
                      'meta-marvell-distro',
-                     'meta-marvell'
+                     'meta-marvell',
+                     'meta-virtualization'
                     ]])
 
 
