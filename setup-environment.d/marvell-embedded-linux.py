@@ -5,7 +5,6 @@ def __set_defaults_marvell_embedded_linux_yocto():
     valid_machines = [
         'clearfog',
         'db-88f6820-gp',
-        'db-88f8040-rz-ddr3',
         'db-88f7040-modular',
         'db-88f3720-ddr3-modular'
     ]
