@@ -1,8 +1,12 @@
+MARVELL_VALID_MACHINES = []
+
 def __set_defaults_marvell_embedded_linux_yocto():
     import os
     import sys
 
-    valid_machines = [
+    # Append to valid machines
+    global MARVELL_VALID_MACHINES
+    MARVELL_VALID_MACHINES += [
         'clearfog',
         'db-88f6820-amc',
         'db-88f6820-gp',
@@ -35,7 +39,7 @@ def __set_defaults_marvell_embedded_linux_yocto():
         elif not local_conf_exists:
             required_var_error(varname, valid_vals)
 
-    maybe_set_default('MACHINE', valid_machines)
+    maybe_set_default('MACHINE', MARVELL_VALID_MACHINES)
     set_default('DISTRO', 'marvell')
 
 def __after_init_marvell_embedded_linux_yocto():
