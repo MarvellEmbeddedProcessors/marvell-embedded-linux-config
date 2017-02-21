@@ -10,6 +10,8 @@ def __set_defaults_marvell_embedded_linux_yocto():
         'clearfog',
         'db-88f6820-amc',
         'db-88f6820-gp',
+        'db-88f7040-modular',
+        'db-88f8040-modular',
     ]
 
     local_conf_exists = os.path.isfile(os.path.join(build_dir,
