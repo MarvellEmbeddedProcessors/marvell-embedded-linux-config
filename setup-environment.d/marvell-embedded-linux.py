@@ -7,9 +7,9 @@ def __set_defaults_marvell_embedded_linux_yocto():
     # Append to valid machines
     global MARVELL_VALID_MACHINES
     MARVELL_VALID_MACHINES += [
-        'clearfog',
         'cb-88f3720-ddr3-expbin',
         'cb-88f8040-mcbin',
+        'clearfog',
         'db-88f3720-ddr3-modular',
         'db-88f6820-amc',
         'db-88f6820-gp',
